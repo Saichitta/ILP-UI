@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Credit Card Payment</h2>
+
+    <label>Credit Card:</label>
+    
+    <label for="cardNumber">Card No:</label>
+    <input type="text" id="cardNumber" maxlength="16" placeholder="Enter 16-digit card number">
+
+    <label for="cardHolder">Card Holder Name:</label>
+    <input type="text" id="cardHolder" placeholder="Enter Card Holder Name">
+
+    <label for="expiryDate">Expiry Date:</label>
+    <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+
+    <label for="cvv">CVV:</label>
+    <input type="password" id="cvv" maxlength="3" placeholder="3-digit CVV">
+
+    <button id="makePaymentBtn">Make Payment</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

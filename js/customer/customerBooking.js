@@ -89,6 +89,28 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
     }
 
     if (isValid) {
+        let receiverName = document.getElementById("receiverName").value.trim();
+        let receiverAddress = document.getElementById("receiverAddress").value.trim();
+        let receiverPin = document.getElementById("receiverPin").value.trim();
+        let receiverMobile = document.getElementById("receiverMobile").value.trim();
+        let parcelWeight = document.getElementById("parcelWeight").value.trim();
+        let parcelContents = document.getElementById("parcelContents").value.trim();
+        let deliverySpeed = document.getElementById("deliverySpeed").value;
+        let packaging = document.getElementById("packaging").value;
+        let pickupDateTime = document.getElementById("pickupDateTime").value;
+        let totalCost = document.getElementById("totalCost").value.replace("₹", ""); // Remove ₹ symbol
+    
+        // Save details to Local Storage
+        localStorage.setItem("receiverName", receiverName);
+        localStorage.setItem("receiverAddress", receiverAddress);
+        localStorage.setItem("receiverPin", receiverPin);
+        localStorage.setItem("receiverMobile", receiverMobile);
+        localStorage.setItem("parcelWeight", parcelWeight);
+        localStorage.setItem("parcelContents", parcelContents);
+        localStorage.setItem("deliverySpeed", deliverySpeed);
+        localStorage.setItem("packaging", packaging);
+        localStorage.setItem("pickupDateTime", pickupDateTime);
+        localStorage.setItem("totalCost", totalCost);
         alert("Booking Successful!");
         window.location.href = "payment.html";
     }

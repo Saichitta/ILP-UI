@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <span>Welcome, <span id="usernameDisplay"></span></span>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <div class="container">
+        <h2>Booking History</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Booking ID</th>
+                    <th>Booking Date</th>
+                    <th>Receiver Name</th>
+                    <th>Delivered Address</th>
+                    <th>Amount (₹)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="bookingHistoryTable"></tbody>
+        </table>
+
+        <div class="pagination">
+            <button id="prevPage" disabled>Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+
+    <script src="customer_booking_history.js"></script>
+</body>
+</html>

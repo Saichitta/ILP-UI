@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Track Your Package</h2>
+        <label for="bookingId">Enter Booking ID (12 digits):</label>
+        <input type="text" id="bookingId" placeholder="Enter Booking ID">
+        <span id="bookingIdError" class="error"></span>
+        <button id="trackButton">Search</button>
+
+        <div id="trackingResult" class="hidden">
+            <h3>Tracking Details</h3>
+            <p><strong>Booking ID:</strong> <span id="trackBookingId"></span></p>
+            <p><strong>Current Status:</strong> <span id="trackStatus"></span></p>
+            <p><strong>Estimated Delivery:</strong> <span id="trackDeliveryDate"></span></p>
+        </div>
+    </div>
+
+    <script src="tracking.js"></script>
+</body>
+</html>
