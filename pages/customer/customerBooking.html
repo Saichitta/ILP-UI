@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Booking</title>
+    <link rel="stylesheet" href="../../css/booking.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book a Service</h2>
+
+        <form id="bookingForm">
+            <!-- Sender Information (Read-Only) -->
+            <fieldset>
+                <legend>Sender Information</legend>
+                <label>Name:</label>
+                <input type="text" id="senderName" value="John Doe" readonly>
+                
+                <label>Address:</label>
+                <input type="text" id="senderAddress" value="123 Street, City" readonly>
+
+                <label>Contact:</label>
+                <input type="text" id="senderContact" value="9876543210" readonly>
+            </fieldset>
+
+            <!-- Receiver Information -->
+            <fieldset>
+                <legend>Receiver Information</legend>
+                <label>Name:</label>
+                <input type="text" id="receiverName" required>
+                <small class="error" id="receiverNameError"></small>
+
+                <label>Address:</label>
+                <input type="text" id="receiverAddress" required>
+                <small class="error" id="receiverAddressError"></small>
+
+                <label>Pin Code:</label>
+                <input type="text" id="receiverPin" required>
+                <small class="error" id="receiverPinError"></small>
+
+                <label>Contact:</label>
+                <input type="text" id="receiverContact" required>
+                <small class="error" id="receiverContactError"></small>
+            </fieldset>
+
+            <!-- Parcel Details -->
+            <fieldset>
+                <legend>Parcel Details</legend>
+                <label>Weight (kg):</label>
+                <input type="number" id="parcelWeight" required>
+                <small class="error" id="parcelWeightError"></small>
+
+                <label>Description:</label>
+                <input type="text" id="parcelDesc" required>
+                <small class="error" id="parcelDescError"></small>
+            </fieldset>
+
+            <!-- Shipping Options -->
+            <fieldset>
+                <legend>Shipping Options</legend>
+                <label>Delivery Speed:</label>
+                <select id="deliverySpeed">
+                    <option value="">Select</option>
+                    <option value="standard">Standard</option>
+                    <option value="express">Express</option>
+                </select>
+                <small class="error" id="deliverySpeedError"></small>
+
+                <label>Packaging:</label>
+                <select id="packaging">
+                    <option value="">Select</option>
+                    <option value="standard">Standard Packaging</option>
+                    <option value="eco">Eco-friendly</option>
+                    <option value="fragile">Fragile Handling</option>
+                </select>
+                <small class="error" id="packagingError"></small>
+            </fieldset>
+
+            <!-- Date & Time Selection -->
+            <fieldset>
+                <legend>Pickup/Drop-off Time</legend>
+                <label>Date:</label>
+                <input type="datetime-local" id="pickupDateTime" required>
+                <small class="error" id="pickupDateError"></small>
+            </fieldset>
+
+            <!-- Additonal Services-->
+            <fieldset>
+                <legend>Additonal Services(Optional)</legend>
+                <label><input type="checkbox" id="insuranceOption"> Insurance (₹200)</label>
+                <label><input type="checkbox" id="trackingOption"> Tracking Service (₹100)</label>
+            </fieldset>
+
+            <!-- Service Cost and Payment -->
+            <fieldset>
+                <legend style="text-align: center">Service Cost</legend>
+                <label style="text-align: center">Calculated Cost (₹):</label>
+                <input type="text" id="totalCost" readonly style="text-align: center">
+                <small class="error" id="paymentMethodError"></small>
+            </fieldset>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <script src="../../js/customer/customerBooking.js"></script>
+</body>
+</html>

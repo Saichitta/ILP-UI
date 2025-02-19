@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: linear-gradient(180deg, black,rgb(89, 89, 183));
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(178, 19, 19, 0.1);
+
+}
+
+#loginForm {
+    background: rgb(247, 247, 247);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#loginForm select{
+    margin-top: 5px;
+    padding: 5px;
+    width: 50%;
+   
+ 
+}
+#loginForm input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#loginForm button {
+    margin-top: 0px;
+    width: 100%;
+    font-weight: bold;
+    border: 1px solid rgb(120, 160, 176);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(120, 160, 176);
+    background-color: white;
+
+}
+    
+#loginForm button:hover {
+    background-color: rgb(120, 160, 176);
+    color: white;
+}
+
+p{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
+/* Registration Page */
+/* Registration Form Styling */
+/* General Styles */
+.registration-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(180deg, black,rgb(89, 89, 183));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f6eeee;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+fieldset label{
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Input Styling */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%; /* Takes full width of parent */
+    max-width: 100%; /* Prevents expanding beyond parent */
+    resize: vertical; /* Allows resizing only in height */
+}
+
+/* Mobile Input */
+.mobile-input {
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    width: 30%;
+}
+
+/* Form Sections (Side by Side) */
+.form-sections {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Personal Info & Account Info */
+.personal-info, .account-info {
+    width: 48%;
+    padding: 15px;
+    background: #ecedee;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Preferences Section (Centered) */
+.preferences-section {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    background: #f1f3f4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    label{
+        display: inline;
+    }
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Error & Success Messages */
+.error-message, .password-error-message {
+    color: red;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+}
