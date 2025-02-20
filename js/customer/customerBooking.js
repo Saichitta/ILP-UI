@@ -92,9 +92,9 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
         let receiverName = document.getElementById("receiverName").value.trim();
         let receiverAddress = document.getElementById("receiverAddress").value.trim();
         let receiverPin = document.getElementById("receiverPin").value.trim();
-        let receiverMobile = document.getElementById("receiverMobile").value.trim();
+        let receiverMobile = document.getElementById("receiverContact").value.trim();
         let parcelWeight = document.getElementById("parcelWeight").value.trim();
-        let parcelContents = document.getElementById("parcelContents").value.trim();
+        let parcelContents = document.getElementById("parcelDesc").value.trim();
         let deliverySpeed = document.getElementById("deliverySpeed").value;
         let packaging = document.getElementById("packaging").value;
         let pickupDateTime = document.getElementById("pickupDateTime").value;
@@ -112,6 +112,6 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
         localStorage.setItem("pickupDateTime", pickupDateTime);
         localStorage.setItem("totalCost", totalCost);
         alert("Booking Successful!");
-        window.location.href = "payment.html";
+        window.location.href = "customerPayment.html";
     }
 });

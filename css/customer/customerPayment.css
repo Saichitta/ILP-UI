@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Payment Container */
+h2 {
+    margin-bottom: 20px;
+}
+
+.payment-container {
+    background: rgb(177, 162, 162);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Pay Now Button */
+#payNowBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#payNowBtn:hover {
+    background-color: #218838;
+}
+
+/* Back to Home Button */
+#backHomeBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#backHomeBtn:hover {
+    background-color: #0056b3;
+}

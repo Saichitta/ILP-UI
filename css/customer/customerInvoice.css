@@ -1,0 +1,61 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Invoice Container */
+.invoice-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Strong Labels */
+strong {
+    color: #007bff;
+}
+
+/* Print Button */
+button {
+    width: 100%;
+    max-width: 200px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* HIDE PRINT BUTTON WHEN PRINTING */
+@media print {
+    button {
+        display: none;
+    }
+}

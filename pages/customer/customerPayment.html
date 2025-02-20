@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../css/customer/customerPayment.css">
 </head>
 <body>
-    <!-- Main Content -->
-    <div class="container">
-        <aside class="sidebar">
-            <h2 id="welcomeUser">Welcome, Customer</h2>
-        </aside>
-    </div>
-
+   
     <h2>Payment Details</h2>
-    
+    <div class="payment-container">
     <label for="billAmount">Bill Amount:</label>
     <input type="text" id="billAmount" readonly>
 
@@ -27,32 +21,7 @@
 
     <button id="payNowBtn">Pay Now</button>
     <button id="backHomeBtn">Back to Home</button>
-
-    <script>
-        // Display Username
-        document.addEventListener("DOMContentLoaded", function () {
-            const username = localStorage.getItem("username") || "Customer"; 
-            document.getElementById("welcomeUser").textContent = `Welcome, ${username}`;
-
-            let billAmount = localStorage.getItem("totalCost");
-            document.getElementById("billAmount").value = `₹${billAmount}`;
-
-            // Logout Button Functionality
-            document.getElementById("logoutBtn").addEventListener("click", function () {
-                localStorage.clear();
-                window.location.href = "index.html";
-            });
-
-            // Pay Now Button Redirect
-            document.getElementById("payNowBtn").addEventListener("click", function () {
-                window.location.href = "card_payment.html";
-            });
-
-            // Back to Home Button Redirect
-            document.getElementById("backHomeBtn").addEventListener("click", function () {
-                window.location.href = "customerBooking.html";
-            });
-        });
-    </script>
+    </div>
+    <script src="../../js/customer/customerPayment.js"></script>
 </body>
 </html>
